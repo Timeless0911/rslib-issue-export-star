@@ -1,9 +1,7 @@
-import { VectorElementType } from "./enum";
+import type { Foo } from "./foo";
 
-export const renderers = {
-  [VectorElementType.Path]: 1,
-  [VectorElementType.Rect]: 2,
-  [VectorElementType.Circle]: 3,
+export const bar = (foo: Foo): string => {
+  return `${foo}-bar`;
 };
 
-export * from "./enum";
+export * from "./foo";
