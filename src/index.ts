@@ -1,6 +1,6 @@
-import type { Foo } from "./foo";
+import { foo } from "./foo";
 
-export const bar = (foo: Foo): string => {
+export const bar = (): string => {
   return `${foo}-bar`;
 };
 
